@@ -9,7 +9,7 @@ class Student < InteractiveRecord
   end 
   
   self.column_names
-    
+    DB[:conn].results_as_hash 
   end   
   
   self.class.column_names.each do |att|
