@@ -8,7 +8,7 @@ class Student < InteractiveRecord
     self.to_s.downcase.pluralize
   end 
   
-  self.column_names
+  def self.column_names
     DB[:conn].results_as_hash = true 
     
     sql = "PRAGMA table_info('#{table_name}')"
