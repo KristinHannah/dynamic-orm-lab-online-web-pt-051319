@@ -63,7 +63,7 @@ class InteractiveRecord
     col_name = nil 
     value_name = nil
     att.each do |key, value|
-      binding.pry
+     # binding.pry
       col_name = key
       value_name = value
     end 
