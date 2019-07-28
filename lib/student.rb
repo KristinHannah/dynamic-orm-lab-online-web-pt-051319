@@ -8,5 +8,8 @@ class Student < InteractiveRecord
     self.to_s.downcase.pluralize
   end 
   
-  
+  self.column_names
+    
+  end   
+
 end
