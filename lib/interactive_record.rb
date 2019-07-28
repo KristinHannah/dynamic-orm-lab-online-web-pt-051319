@@ -58,6 +58,8 @@ class InteractiveRecord
   end 
   
   def self.find_by(att) 
+    col_name = nil 
+    value_name = nil
     att.each do |key, value|
       col_name = key 
       value_name = value
