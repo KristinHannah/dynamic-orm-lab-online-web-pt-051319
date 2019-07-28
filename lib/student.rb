@@ -11,7 +11,7 @@ class Student < InteractiveRecord
   self.column_names
     DB[:conn].results_as_hash = true 
     
-    sql = "PRAGMA table "
+    sql = "PRAGMA table_info "
   end   
   
   self.class.column_names.each do |att|
