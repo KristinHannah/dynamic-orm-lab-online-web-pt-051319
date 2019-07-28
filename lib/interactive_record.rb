@@ -44,6 +44,7 @@ class InteractiveRecord
   end 
  
   def save
-    sql =
+    sql = <<-SQL 
+    INSERT INTO #{table_name_for_insert
   end 
 end
