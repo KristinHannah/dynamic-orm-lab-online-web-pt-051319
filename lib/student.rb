@@ -23,7 +23,7 @@ class Student < InteractiveRecord
   end   
   
   self.column_names.each do |att|
-      attr_accessor att.to_symbol
+      attr_accessor att.to_sym
   end 
 
   
