@@ -6,5 +6,7 @@ class Student < InteractiveRecord
   
   self.table_name
     self.to_s.downcase.pluralize
-
+  end 
+  
+  
 end
