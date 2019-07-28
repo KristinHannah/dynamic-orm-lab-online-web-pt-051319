@@ -61,7 +61,7 @@ class InteractiveRecord
     col_name = nil 
     value_name = nil
     att.each do |key, value|
-      col_name = key 
+      col_name = key.to_sym 
       value_name = value
     end 
     sql = "SELECT * FROM #{self.table_name} WHERE ? = ?;"
