@@ -64,7 +64,7 @@ class InteractiveRecord
     value_name = nil
     att.each do |key, value|
      # binding.pry
-      col_name = key
+      col_name = key.to_s
       value_name = value
     end 
     sql = "SELECT * FROM #{self.table_name} WHERE ? = ?;"
