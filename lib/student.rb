@@ -26,5 +26,6 @@ class Student < InteractiveRecord
     self.class.column_names.each do |att|
       attr_accessor att.to_symbol
   end 
+end
   
 end
