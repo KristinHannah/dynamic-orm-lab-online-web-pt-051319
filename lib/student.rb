@@ -11,5 +11,9 @@ class Student < InteractiveRecord
   self.column_names
     
   end   
-
+  
+  attr_accessor
+    self.class.column_names.each do |att|
+      attr_accessor 
+  end 
 end
