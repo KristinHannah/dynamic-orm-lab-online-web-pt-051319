@@ -61,7 +61,7 @@ class InteractiveRecord
     att.each do |key, value|
       col_name = key 
       value_name = value
-    key, value = att.split ': ', 2
+    end 
     sql = "SELECT * FROM #{self.table_name} WHERE ? = ?;"
     DB[:conn].execute(sql, col_name, value_name)
   end 
