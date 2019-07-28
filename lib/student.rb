@@ -22,7 +22,8 @@ class Student < InteractiveRecord
     column_names.compact
   end   
   
-  def self.class.column_names.each do |att|
+  def attr_accessor
+    self.class.column_names.each do |att|
       attr_accessor att.to_symbol
   end 
   
