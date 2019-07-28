@@ -12,8 +12,7 @@ class Student < InteractiveRecord
     
   end   
   
-  attr_accessor
-    self.class.column_names.each do |att|
+  self.class.column_names.each do |att|
       attr_accessor att.to_symbol
   end 
 end
