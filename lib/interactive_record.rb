@@ -1,6 +1,6 @@
 require_relative "../config/environment.rb"
 require 'active_support/inflector'
-
+require "pry"
 class InteractiveRecord
   
    def initialize(options={})
@@ -61,6 +61,7 @@ class InteractiveRecord
     col_name = nil 
     value_name = nil
     att.each do |key, value|
+      binding.pry
       col_name = key.to_sym 
       value_name = value
     end 
